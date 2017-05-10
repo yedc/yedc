@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>What makes people unhappy? - A data visualisation project</title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet" type="text/css"><!--google font-->
+		<link rel="stylesheet" href="assets/stylesheets/libs/c3.css"/>
+		<link rel="stylesheet" href="assets/stylesheets/style.css"/>
+	</head>
+	<body>
+
+    
+    <div id="header">
+      <h1>What makes people unhappy?</h1>
+    </div>
+    
+	<div id="main">
+    
+		<div id="intro">
+        	<div id="intro_text">
+              <p align="justify" >Nowadays, <strong>4 out of 15</strong> people experience mental disorders or affected by depression. Suicide occurs in people of all ages, including children, but adults in middle- and late-middle age have the highest suicide rate. As an extreme action caused by mental suffering it is often overlooked and not been talked about. Therefore, I choose this topic for my project and try to find out what factor may affect the suicide rate.</p>
+              <p align="justify" >By comparing UK suicide data with a few other figures, such as average income, population, household income and so on, I found that there are similar patterns in the UK unemployment rate and suicide rate.</p>
+          </div>
+            <div id="faces">
+                <img src="img/disappointed-face.png" alt=""/>
+                <img src="img/disappointed-face.png" alt=""/>
+                <img src="img/disappointed-face.png" alt=""/>
+                <img src="img/disappointed-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                <img src="img/smiling-face.png" alt=""/>
+                               
+            </div>  
+       	</div>
+        
+    
+      	<div id="box1">
+        <h2 style="padding-left: 20%;">Annual Rates Comparison, UK (2000 - 2014)</h2>
+             <div id="group1">
+                    <div id="chart1" >
+                        <div class="chart"></div>
+                  </div>
+                    <div id="chart2" >
+                        <div class="chart"></div>
+                    </div>
+          </div>
+                
+          <div id="interactive1" class="left_border">
+                    <p>I looked at UK's unemployment rate from year 2000 to 2014, and the suicide rate in the same period, they seem to have no correlations at first sight, but the trends become very similar when I move the unemployment rate chart to the right. There seems to be a 2 years' gap for the patterns to match.</p>
+                    <button id="button1" class="button">Compare</button>
+                    <button id="button2" class="button">Reset</button>
+                    <p>&nbsp;</p>
+                </div>
+                
+      </div>
+          
+      <div class="line"></div>
+        <div id="box2">
+            
+       	  <h2 style="padding-left: 15%;">Annual Number Comparison, England (1998 - 2008 vs 2000 - 2010)</h2>
+
+            
+            <div id="group2">
+                <div id="chart3">
+                  <div class="chart"></div>
+              </div>
+                <div id="chart4">
+                  <div class="chart"></div>
+              </div>
+                
+          </div>
+              <div id="interactive2" class="left_border">
+                <p>Then I try to compare the rates cover a longer period. </p>
+                <p>I look into England's unemployment number and suicide number, and compare them with a 2 years' time difference. </p>
+                <p>The upper chart is the unemployment numbers from year 1998 to 2008. </p>
+                <p>The lower chart is the suicide numbers from year 2000 to 2010. Use the Compare button we can see if the trends match.</p>
+				<button id="button3" class="button">Compare</button>
+                <button id="button4" class="button">Reset</button>
+                
+                <p>Then I asked myself, &quot;What about comparing the monthly figures?&quot;</p>
+                <p> So I create the monthly charts with a two years' gap. It turns out the patterns are different in the monthly basis charts.</p>
+          </div>
+      </div>
+      <div class="line"></div>
+      
+      <div id="groupchart">
+      
+      <h2 style="text-align:center;">Monthly Number Comparison, England (1998 - 2008 vs 2000 - 2010)</h2>
+
+
+        <div class="small">
+        	<div id="chartEUM1998">
+            	<div class="chart"></div>
+            </div>
+        	<h3>1998</h3>
+            <div id="chartESM2000">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2000</h4>
+        </div>          
+        
+        <div class="small">
+        	<div id="chartEUM1999">
+            	<div class="chart"></div>
+            </div>
+        	<h3>1999</h3>
+            <div id="chartESM2001">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2001</h4>
+        </div>
+        
+        <div class="small">
+        	<div id="chartEUM2000">
+            	<div class="chart"></div>
+            </div>
+        	<h3>2000</h3>
+            <div id="chartESM2002">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2002</h4>
+        </div>     
+        
+        <div class="small">
+        	<div id="chartEUM2001">
+            	<div class="chart"></div>
+            </div>
+        	<h3>2001</h3>
+            <div id="chartESM2003">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2003</h4>
+        </div>
+        
+       <div class="small">
+        	<div id="chartEUM2002">
+            	<div class="chart"></div>
+            </div>
+        	<h3>2002</h3>
+            <div id="chartESM2004">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2004</h4>
+        </div>
+        
+        <div class="small">
+        	<div id="chartEUM2003">
+            	<div class="chart"></div>
+            </div>
+        	<h3>2003</h3>
+            <div id="chartESM2005">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2005</h4>
+        </div>
+        
+        <div class="small">
+        	<div id="chartEUM2004">
+            	<div class="chart"></div>
+            </div>
+        	<h3>2004</h3>
+            <div id="chartESM2006">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2006</h4>
+        </div>
+        
+        <div class="small">
+        	<div id="chartEUM2005">
+            	<div class="chart"></div>
+            </div>
+        	<h3>2005</h3>
+            <div id="chartESM2007">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2007</h4>
+        </div>
+        
+        <div class="small">
+        	<div id="chartEUM2006">
+            	<div class="chart"></div>
+            </div>
+        	<h3>2006</h3>
+            <div id="chartESM2008">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2008</h4>
+        </div>
+        
+        <div class="small">
+        	<div id="chartEUM2007">
+            	<div class="chart"></div>
+            </div>
+        	<h3>2007</h3>
+            <div id="chartESM2009">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2009</h4>
+        </div>
+        
+        <div class="small">
+        	<div id="chartEUM2008">
+            	<div class="chart"></div>
+            </div>
+        	<h3>2008</h3>
+            <div id="chartESM2010">
+            	<div class="chart"></div>
+            </div>
+        	<h4>2010</h4>
+        </div>
+                         
+        <div class="small">
+        	<div id="result">
+            <h3>Conclusion</h3>
+            <p>Although the unemployment situation might somehow affect the suicide rate, there is still little evidence to explain why some people attempt suicide. Research has shown many people who die by suicide have a mental illness, most commonly depression or an alcohol problem. Employment may just be one of the reasons.</p>
+            
+            </div>
+        </div>          
+        
+      </div>
+      <div id="reference">
+      <p>* If you are concerned that you are developing a mental health problem you should <a href="https://www.mentalhealth.org.uk/publications/gp-visit-guide" target="_blank">seek the advice and support of your GP</a> as a matter of priority. If you are in distress and need immediate help and are unable to see a GP, you should visit <a href="http://www.nhs.uk/service-search" target="_blank">your local A&amp;E</a>. There is also help and support available from <a href="http://www.mind.org.uk/information-support/helplines/" target="_blank">Mind</a>. Sharing a problem is often the first step to recovery.</p>
+      	<h5>Chart Data Sources: </h5>
+            <a href="http://www.euro.who.int/en/health-topics/noncommunicable-diseases/mental-health/data-and-statistics" target="new">
+            <h5>WHO, </h5>
+            </a>
+             
+            <a href="https://www.ons.gov.uk/" target="new">
+            <h5>Office for National Statistics, </h5>
+            </a>
+             
+            <a href="http://stats.oecd.org/">
+            <h5>OECD.</h5>
+            </a>
+            
+           
+      </div>
+    </div>
+    
+  <footer id="footer"><h6>Created by Lange Ye</h6></footer>
+  
+      <a href="#" class="back-to-top">Back to Top</a>
+
+    <!--	D3 is a library for creating documents based on data - data driven documents
+			more about d3: https://d3js.org/
+			You can get d3 from https://github.com/mbostock/d3 
+		-->
+	<script src="assets/javascript/libs/d3.min.js"></script>
+	<!-- 	C3 is a reusable chart library built on top of d3
+			more about c3: http://c3js.org/
+			You can get c3 from https://github.com/masayuki0812/c3/releases/tag/0.4.10 
+		-->
+	<script src="assets/javascript/libs/c3.min.js"></script>
+    <script src="assets/javascript/libs/jquery-1.12.4.min.js"></script>
+		
+	<script>
+		
+	// ---------------- code for charts --------------------		
+			
+			var chart1 = c3.generate({
+				bindto: '#chart1 .chart',	
+				size: {
+						height: 200,
+						},			
+				data: {
+					url: 'data/unemployment.csv',
+					x: 'Year', //need to be same as column name
+					y: 'Unemployment Rate',
+					mimeType: 'csv',
+					type:'spline',
+					
+					colors: {'Unemployment Rate':'#12B4C9'}
+					},
+				axis: {
+					 y: {
+           			 label:{ text: '(%)', position: 'outer-middle'},
+					 	},
+					 }	
+				
+			});		
+				
+			var chart2 = c3.generate({
+				bindto: '#chart2 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/suicideRate.csv',
+					x: 'Year', //need to be same as column name
+					y: 'Rate(per100,000)',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'Suicide Rate':'#7157A5'}
+					},	
+				 axis: {
+					 x:{
+						 label : {text:'Year',position: 'outer-center'},
+						
+						 },
+       				 y: {
+           			 max: 12, min: 10, label:{ text: '(Per 100,000)', position: 'outer-middle'},
+					 },
+					 }					 
+
+			});	
+		
+			var chart3 = c3.generate({
+				bindto: '#chart3 .chart',	
+				size: {
+						height: 200,
+						},				
+				data: {
+					url: 'data/englandUnemploymentNum.csv',
+					x: 'Year',
+					y: 'Number of Unemployment (Thousands)',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'Number of Unemployment (Thousands)':'#12B4C9'}
+					},
+				axis: {
+					 x: {
+           			 label:{ text: 'Year', position: 'outer-center'},
+					 	},
+					y: {
+           			 	label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 	},
+					 }	
+				
+			});		
+				
+			var chart4 = c3.generate({
+				bindto: '#chart4 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/englandSuicideNum.csv',
+					x: 'Year', 
+					y: 'Number of suicide',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'Number of suicide':'#7157A5'}
+					},	
+				 axis: {
+					 x:	{
+						 label : {text:'Year',position: 'outer-center'},
+						 },
+       					y: {
+           			 	max: 4800, min: 4000, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+
+			});	
+			
+			var chartEUM1998 = c3.generate({
+				bindto: '#chartEUM1998 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM1998.csv',
+					x: 'Month', //need to be same as column name
+					y: '1998',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'1998':'#12B4C9'},
+					names: {
+    						'1998': 'England Unemployment Number in Thousands',
+ 							 }
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2000 = c3.generate({
+				bindto: '#chartESM2000 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2000.csv',
+					x: 'Month', //need to be same as column name
+					y: '2000',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2000':'#7157A5'},
+					names: {
+    						'2000': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});	
+			
+
+		var chartEUM1999 = c3.generate({
+				bindto: '#chartEUM1999 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM1999.csv',
+					x: 'Month', //need to be same as column name
+					y: '1999',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'1999':'#12B4C9'},
+					names: {
+    						'1999': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2001 = c3.generate({
+				bindto: '#chartESM2001 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2001.csv',
+					x: 'Month', //need to be same as column name
+					y: '2001',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2001':'#7157A5'},
+					names: {
+    						'2001': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});	
+			
+			var chartEUM2000 = c3.generate({
+				bindto: '#chartEUM2000 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM2000.csv',
+					x: 'Month', //need to be same as column name
+					y: '2000',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'2000':'#12B4C9'},
+					names: {
+    						'2000': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2002 = c3.generate({
+				bindto: '#chartESM2002 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2002.csv',
+					x: 'Month', //need to be same as column name
+					y: '2002',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2002':'#7157A5'},
+					names: {
+    						'2002': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});			
+			
+			
+			var chartEUM2001 = c3.generate({
+				bindto: '#chartEUM2001 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM2001.csv',
+					x: 'Month', //need to be same as column name
+					y: '2001',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'2001':'#12B4C9'},
+					names: {
+    						'2001': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2003 = c3.generate({
+				bindto: '#chartESM2003 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2003.csv',
+					x: 'Month', //need to be same as column name
+					y: '2003',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2003':'#7157A5'},
+					names: {
+    						'2003': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});		
+			
+			var chartEUM2002 = c3.generate({
+				bindto: '#chartEUM2002 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM2002.csv',
+					x: 'Month', //need to be same as column name
+					y: '2002',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'2002':'#12B4C9'},
+					names: {
+    						'2002': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2004 = c3.generate({
+				bindto: '#chartESM2004 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2004.csv',
+					x: 'Month', //need to be same as column name
+					y: '2004',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2004':'#7157A5'},
+					names: {
+    						'2004': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});	
+			
+			
+			var chartEUM2003 = c3.generate({
+				bindto: '#chartEUM2003 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM2003.csv',
+					x: 'Month', //need to be same as column name
+					y: '2003',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'2003':'#12B4C9'},
+					names: {
+    						'2003': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2005 = c3.generate({
+				bindto: '#chartESM2005 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2005.csv',
+					x: 'Month', //need to be same as column name
+					y: '2005',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2005':'#7157A5'},
+					names: {
+    						'2005': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});	
+			
+			
+			var chartEUM2004 = c3.generate({
+				bindto: '#chartEUM2004 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM2004.csv',
+					x: 'Month', //need to be same as column name
+					y: '2004',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'2004':'#12B4C9'},
+					names: {
+    						'2004': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2006 = c3.generate({
+				bindto: '#chartESM2006 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2006.csv',
+					x: 'Month', //need to be same as column name
+					y: '2006',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2006':'#7157A5'},
+					names: {
+    						'2006': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});	
+			
+			
+			var chartEUM2005 = c3.generate({
+				bindto: '#chartEUM2005 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM2005.csv',
+					x: 'Month', //need to be same as column name
+					y: '2005',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'2005':'#12B4C9'},
+					names: {
+    						'2005': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2007 = c3.generate({
+				bindto: '#chartESM2007 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2007.csv',
+					x: 'Month', //need to be same as column name
+					y: '2007',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2007':'#7157A5'},
+					names: {
+    						'2007': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});	
+			
+			
+			var chartEUM2006 = c3.generate({
+				bindto: '#chartEUM2006 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM2006.csv',
+					x: 'Month', //need to be same as column name
+					y: '2006',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'2006':'#12B4C9'},
+					names: {
+    						'2006': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2008 = c3.generate({
+				bindto: '#chartESM2008 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2008.csv',
+					x: 'Month', //need to be same as column name
+					y: '2008',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2008':'#7157A5'},
+					names: {
+    						'2008': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});		
+			
+			
+			var chartEUM2007 = c3.generate({
+				bindto: '#chartEUM2007 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM2007.csv',
+					x: 'Month', //need to be same as column name
+					y: '2007',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'2007':'#12B4C9'},
+					names: {
+    						'2007': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2009 = c3.generate({
+				bindto: '#chartESM2009 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2009.csv',
+					x: 'Month', //need to be same as column name
+					y: '2009',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2009':'#7157A5'},
+					names: {
+    						'2009': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});	
+			
+			
+			var chartEUM2008 = c3.generate({
+				bindto: '#chartEUM2008 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/EUM2008.csv',
+					x: 'Month', //need to be same as column name
+					y: '2008',
+					mimeType: 'csv',
+					type:'spline',
+					colors: {'2008':'#12B4C9'},
+					names: {
+    						'2008': 'England Unemployment Number in Thousands',
+ 							 },
+					},
+				legend: {
+        					show: false
+    					},
+				 axis: {
+					 x:{
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			  max: 1750, min: 1200, label:{ text: 'Unemployment (Thousands)', position: 'outer-middle'},
+					 },
+					 }					 
+			});	
+			
+			var chartESM2010 = c3.generate({
+				bindto: '#chartESM2010 .chart',
+				size: {
+						height: 200,
+						},	
+				data: {
+					url: 'data/ESM2010.csv',
+					x: 'Month', //need to be same as column name
+					y: '2010',
+					mimeType: 'csv',
+					type:'bar',
+					colors: {'2010':'#7157A5'},
+					names: {
+    						'2010': 'England Suicide Number',
+ 							 },
+					},
+				legend: {
+       				show: false
+    				},	
+				axis: {
+					 x: {
+						 label : {text:'Month',position: 'outer-left'},
+						
+						 },
+       				 y: {
+           			 max: 500, min: 320, label:{ text: 'Suicide Number', position: 'outer-middle'},
+					 	},
+					 }					 
+			});
+	
+
+// ---------------- code for buttons --------------------		
+			
+		$("#button1").click(function(){
+			console.log(chart1.axis.x)
+			$("#chart1").animate(
+				{	
+					left: "11.5%",
+				}, 
+				1000, 
+				"linear", 
+				function() {
+				}
+			);			
+			$('#chart1 .c3-axis').animate(
+				{ 
+					opacity: 0
+				}, 
+				1000
+			);
+			$("#chart1").animate(
+					{
+					top:"30%",
+					}, 
+					1000, "linear", function() {
+					}
+					);
+			$('#chart2 .c3-axis-y').animate(
+					{ 
+					opacity: 0
+					}, 
+					1000
+				);
+			$('#chart1 .c3-legend-item').animate(
+				{ 
+					opacity: 0
+				}, 
+				1000
+				);			
+		});
+			
+		$("#button2").click(function(){
+			console.log(chart1.axis.x)
+			$("#chart1").animate(
+				{	
+					left: "0%",
+					top:"0%",
+				}, 
+				200, 
+				"linear", 
+				function() {
+				}
+			);			
+			$('#chart1 .c3-axis').animate(
+				{ 
+					opacity: 100
+				}, 
+				1000
+			);			
+			$('#chart2 .c3-axis-y').animate(
+					{ 
+					opacity: 100
+					}, 
+					1000
+				);
+			$('#chart1 .c3-legend-item').animate(
+				{ 
+					opacity: 100
+				}, 
+				1000
+				);
+		});
+		
+		
+	$("#button3").click(function(){
+			console.log(chart3.axis.x)
+			
+			$('#chart3 .c3-axis').animate(
+				{ 
+					opacity: 0
+				}, 
+				1000
+			);
+			$("#chart3").animate(
+					{
+					top:"30%",
+					}, 
+					1000, "linear", function() {
+					}
+					);
+			$('#chart4 .c3-axis-y').animate(
+					{ 
+					opacity: 0
+					}, 
+					1000
+				);
+			$('#chart3 .c3-legend-item').animate(
+				{ 
+					opacity: 0
+				}, 
+				1000
+			);		
+		});
+			
+		$("#button4").click(function(){
+			console.log(chart3.axis.x)
+			
+			$("#chart3").animate(
+				{	
+					top:"0%",
+				}, 
+				200, 
+				"linear", 
+				function() {
+				}
+			);			
+			$('#chart3 .c3-axis').animate(
+				{ 
+					opacity: 100
+				}, 
+				1000
+			);			
+			$('#chart4 .c3-axis-y').animate(
+					{ 
+					opacity: 100
+					}, 
+					1000
+				);
+			$('#chart3 .c3-legend-item').animate(
+				{ 
+					opacity: 100
+				}, 
+				1000
+				);
+		});
+	
+	//-----------back to top button-------
+	
+	var amountScrolled = 300;
+		$(window).scroll(function() {
+			if ( $(window).scrollTop() > amountScrolled ) {
+				$('a.back-to-top').fadeIn('slow');
+			} else {
+				$('a.back-to-top').fadeOut('slow');
+			}
+		});
+		
+	$('a.back-to-top, a.simple-back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 500);
+	return false;
+	});
+	
+	</script>
+        
+	</body>
+</html>

@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+		background-color:#FFFFFF;
+		font-family:Verdana, Geneva, sans-serif;
+		background-image:url(img/header_bg.png);
+		background-position:top;
+		background-repeat:repeat-x;
+		}
+		
+p {
+		font-size:12px;
+		font:Verdana, Geneva, sans-serif;
+		line-height:20px;
+	}
+	
+#all {
+	width:800px;
+	height:auto;
+	margin:0 auto 0 auto;
+	}
+
+#header {
+	width:700px;
+	height:211px;
+	}
+
+#logo {
+	background-image:url(img/logo.png);
+	width:376px;
+	height:180px;
+	margin:15px auto auto auto;
+}
+
+#notice {
+	width:700px;
+	height:auto;
+	margin:0 auto 0 auto;
+}
