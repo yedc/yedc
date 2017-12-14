@@ -2,11 +2,7 @@
 */
 body{
 	font-family: 'Ubuntu', sans-serif;
-	background-color:#847367; 	/* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#FFF5E2, #847367); 	/* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FFF5E2, #847367); 		/* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FFF5E2, #847367); 	/* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FFF5E2, #847367); 			/* Standard syntax (must be last) */
+	background-color:#847367; 
 	}
 p{
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
