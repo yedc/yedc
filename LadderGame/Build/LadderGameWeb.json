@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Prototype_1",
+"dataUrl": "LadderGameWeb.data.unityweb",
+"asmCodeUrl": "LadderGameWeb.asm.code.unityweb",
+"asmMemoryUrl": "LadderGameWeb.asm.memory.unityweb",
+"asmFrameworkUrl": "LadderGameWeb.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
